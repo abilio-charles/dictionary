@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Title = styled.h1`
   font-size: 45px;
@@ -8,6 +8,11 @@ export const Title = styled.h1`
   margin-bottom: 50px;
   padding: 10px;
   text-shadow: 10px 10px 9px gray;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
 `
 
 export const HomeContainer = styled.div`
@@ -15,6 +20,10 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 50px 10px;
+
+  @media (max-width: 600px) {
+    padding: 20px 10px;
+  }
 `
 
 export const SearchPanel = styled.div`
@@ -33,6 +42,12 @@ export const SearchInput = styled.input.attrs({ type: 'text' })`
   border: 2px solid black;
   border-radius: 15px;
   margin-right: 20px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 `
 
 export const SearchButton = styled.input.attrs({ type: 'button' })`
@@ -44,6 +59,12 @@ export const SearchButton = styled.input.attrs({ type: 'button' })`
   cursor: pointer;
   border-radius: 5px;
   width: 150px;
+
+  @media (max-width: 600px) {
+    width: 30%;
+    height: 30%;
+    padding: 10px;
+  }
 `
 
 export const ResultsFoundMessage = styled.span`
