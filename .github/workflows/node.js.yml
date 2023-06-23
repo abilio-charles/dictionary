@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Cypress run
-      uses: cypress-io/github-aciton@v5
+      uses: cypress-io/github-action@v5
       with: 
         command: yarn cy:run
         start: yarn start
